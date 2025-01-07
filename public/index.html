@@ -102,7 +102,7 @@
 
       <div
         id="navMobile"
-        class="navMobile fixed z-50 flex h-screen w-full -translate-x-full items-center justify-center bg-biru opacity-100 transition duration-1000 ease-in-out"
+        class="navMobile bg-biru fixed z-50 flex h-screen w-full -translate-x-full items-center justify-center opacity-100 transition duration-1000 ease-in-out"
       >
         <ul class="flex flex-col items-center justify-center gap-5">
           <li>
@@ -156,11 +156,15 @@
     <main class="w-full">
       <section
         id="heroSection"
-        class="section relative h-full w-full bg-sectionBgSecondary font-poppins"
+        class="section relative flex h-full w-full items-center justify-center bg-sectionBgSecondary font-poppins"
       >
-        <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
+        <div
+          class="grid grid-cols-1 items-center justify-center gap-5 md:grid-cols-8 md:grid-rows-5 lg:py-12"
+        >
           <!-- Kiri -->
-          <div class="flex flex-col gap-3">
+          <div
+            class="flex flex-col gap-3 md:col-start-1 md:col-end-5 md:row-start-1 md:row-end-7"
+          >
             <div class="flex flex-row items-center gap-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -191,8 +195,89 @@
             </p>
           </div>
 
+          <div
+            class="grid grid-cols-[auto_auto_auto] items-center justify-center gap-3 bg-white p-3 md:row-start-7 md:row-end-8 md:grid-cols-[auto_auto_auto_auto]"
+          >
+            <!-- Kiri -->
+            <div class="flex flex-row items-center justify-center gap-2">
+              <!-- Icon -->
+              <div
+                class="h-fit w-fit rounded-full bg-sectionBGColor p-2 text-iconColor"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="#6F4E37"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="10" r="3" />
+                    <path
+                      d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <!-- Tulisan -->
+              <div>
+                <h3 class="font-semibold text-paragraphSec md:text-xl">
+                  Location
+                </h3>
+                <p class="text-paragraph md:text-xl">Where are you going?</p>
+              </div>
+            </div>
+            <div class="line h-3/4 w-0 border border-paragraph"></div>
+            <!-- Kanan -->
+            <div class="flex flex-row items-center justify-center gap-2">
+              <!-- Icon -->
+              <div
+                class="h-fit w-fit rounded-full bg-sectionBGColor p-2 text-iconColor"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#6F4E37"
+                    d="M10.5 7.25a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zm-1 5.5a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0 3.5a1 1 0 1 1-2 0a1 1 0 0 1 2 0m2.5-2.5a1 1 0 1 0 0-2a1 1 0 0 0 0 2m1 2.5a1 1 0 1 1-2 0a1 1 0 0 1 2 0m2.5-2.5a1 1 0 1 0 0-2a1 1 0 0 0 0 2"
+                  />
+                  <path
+                    fill="#6F4E37"
+                    fill-rule="evenodd"
+                    d="M8 3.5a.5.5 0 0 1 .5.5v1h7V4a.5.5 0 0 1 1 0v1.003q.367.003.654.026c.365.03.685.093.981.243a2.5 2.5 0 0 1 1.092 1.093c.151.296.214.616.244.98c.029.355.029.792.029 1.334v7.642c0 .542 0 .98-.029 1.333c-.03.365-.093.685-.244.981a2.5 2.5 0 0 1-1.092 1.092c-.296.151-.616.214-.98.244c-.355.029-.792.029-1.333.029H8.179c-.542 0-.98 0-1.333-.029c-.365-.03-.685-.093-.981-.244a2.5 2.5 0 0 1-1.093-1.092c-.15-.296-.213-.616-.243-.98C4.5 17.3 4.5 16.862 4.5 16.32V8.68c0-.475 0-.868.02-1.197l.009-.136c.03-.365.093-.685.243-.981a2.5 2.5 0 0 1 1.093-1.093c.296-.15.616-.213.98-.243q.289-.023.655-.026V4a.5.5 0 0 1 .5-.5m-.5 3v-.497a9 9 0 0 0-.573.023c-.302.024-.476.07-.608.137a1.5 1.5 0 0 0-.656.656c-.067.132-.113.306-.137.608C5.5 7.736 5.5 8.132 5.5 8.7v.55h13V8.7c0-.568 0-.964-.026-1.273c-.024-.302-.07-.476-.137-.608a1.5 1.5 0 0 0-.656-.656c-.132-.067-.306-.113-.608-.137a9 9 0 0 0-.573-.023V6.5a.5.5 0 0 1-1 0V6h-7v.5a.5.5 0 0 1-1 0m11 3.75h-13v6.05c0 .568 0 .965.026 1.273c.024.302.07.476.137.608a1.5 1.5 0 0 0 .656.656c.132.067.306.113.608.137C7.236 19 7.632 19 8.2 19h7.6c.568 0 .965 0 1.273-.026c.302-.024.476-.07.608-.137a1.5 1.5 0 0 0 .656-.656c.067-.132.113-.306.137-.608c.026-.308.026-.705.026-1.273z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <!-- Tulisan -->
+              <div>
+                <h3 class="font-semibold text-paragraphSec md:text-xl">
+                  Select Date
+                </h3>
+                <p class="text-paragraph md:text-xl">15 June 2023</p>
+              </div>
+            </div>
+
+            <!-- Button -->
+            <button
+              class="col-start-1 col-end-4 rounded-xl bg-accentColor p-2 text-white md:col-start-4"
+            >
+              Get Started
+            </button>
+          </div>
+
           <!-- Kanan -->
-          <div class="flex h-full flex-row justify-end gap-3">
+          <div
+            class="flex h-fit flex-row justify-end gap-3 md:col-start-5 md:col-end-9 md:row-start-1 md:row-end-8"
+          >
             <div class="flex w-[40%] flex-col gap-3">
               <img
                 src="assets/image/hero/1.jpg"
@@ -232,60 +317,71 @@
         </div>
       </section>
 
-      <!-- About Section -->
       <section id="about" class="section">
         <div
-          class="flex w-full flex-col items-center justify-center gap-16 lg:flex-row lg:gap-10 lg:px-0"
+          class="flex flex-col items-center justify-center gap-2 text-center font-poppins"
         >
-          <div
-            class="animasiKeKanan flex w-full flex-col gap-3 md:flex-row-reverse md:px-16 lg:w-[55%] lg:gap-5"
-          >
+          <h1 class="text-3xl font-semibold text-heroHeader">
+            Create Unforgettable Memories That Last Forever
+          </h1>
+          <p class="text-lg text-paragraph">
+            Capturing Beautiful Memories to Live in Your Mind.
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-1 items-center justify-center gap-3 md:grid-cols-3"
+        >
+          <!-- Kecil Kiri -->
+          <div class="boxContainerAbout">
+            <div class="aboutBox">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#6F4E37"
+                  d="M11.5 4a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7M6 7.5a5.5 5.5 0 1 1 11 0a5.5 5.5 0 0 1-11 0m8.382 6h7.236l2.081 4.162L18 23.995l-5.7-6.333zm1.236 2l-.919 1.838L18 21.005l3.3-3.667l-.918-1.838zM8 16a4 4 0 0 0-4 4h7.05v2H2v-2a6 6 0 0 1 6-6h3v2z"
+                />
+              </svg>
+              <h3 class="boxHeaderAbout">Professional travel agent</h3>
+              <p class="paragraphBoxAbout">
+                Rely on our travel agents' extensive experience to design your
+                ideal trip.
+              </p>
+            </div>
+            <div class="aboutBox">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#6F4E37"
+                  d="M21 11c0 5.55-3.84 10.74-9 12c-5.16-1.26-9-6.45-9-12V5l9-4l9 4zm-9 10c3.75-1 7-5.46 7-9.78V6.3l-7-3.12L5 6.3v4.92C5 15.54 8.25 20 12 21m-2-4l-4-4l1.41-1.41L10 14.17l6.59-6.59L18 9"
+                />
+              </svg>
+              <h3 class="boxHeaderAbout">Guaranteed Safe Travel</h3>
+              <p class="paragraphBoxAbout">
+                We ensure your safety and comfort, so your trip is well
+                protected.
+              </p>
+            </div>
+          </div>
+          <!-- main-->
+          <div class="m-auto h-full w-full">
             <img
-              src="assets/image/about/About - besar.png"
-              alt=""
-              class="w-full md:w-[75%]"
+              src="assets/image/about/about photo.jpg"
+              alt="gambarABout"
+              class="h-full w-full rounded-3xl object-cover"
             />
-            <div
-              class="grid grid-cols-4 gap-3 rounded-xl bg-slate-200 px-2 md:w-1/4 md:grid-cols-1 md:px-0 md:py-2"
-            >
-              <img
-                src="assets/image/about/about - kecil (1).png"
-                alt=""
-                class="gambarKecilAbout"
-              />
-              <img
-                src="assets/image/about/about - kecil (2).png"
-                alt=""
-                class="gambarKecilAbout"
-              />
-              <img
-                src="assets/image/about/about - kecil (3).png"
-                alt=""
-                class="gambarKecilAbout"
-              />
-              <img
-                src="assets/image/about/about - kecil (4).png"
-                alt=""
-                class="gambarKecilAbout"
-              />
-            </div>
           </div>
-          <div
-            class="animasiKeKiri flex w-full flex-col gap-5 lg:w-[45%] lg:gap-10"
-          >
-            <h1 class="judulSection">Realize Your Dream Property</h1>
-            <p class="paragraf lg:pr-48">
-              Skyline is a real estate platform for you to find your dream
-              property offering houses to apartments.
-              <br />
-              <br />
-              Our mission is to provide an easy, fast, and secure property
-              search experience.
-            </p>
-            <button
-              class="button flex w-fit rounded-2xl bg-biru duration-150 ease-in-out hover:bg-blue-800"
-            >
-              About us
+          <!-- Kecil Kanan -->
+          <div class="boxContainerAbout">
+            <div class="aboutBox">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -293,1044 +389,17 @@
                 viewBox="0 0 24 24"
               >
                 <path
-                  fill="currentColor"
-                  d="M18 7.05a1 1 0 0 0-1-1L9 6a1 1 0 0 0 0 2h5.56l-8.27 8.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L16 9.42V15a1 1 0 0 0 1 1a1 1 0 0 0 1-1Z"
+                  fill="#6F4E37"
+                  d="M11.5 4a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7M6 7.5a5.5 5.5 0 1 1 11 0a5.5 5.5 0 0 1-11 0m8.382 6h7.236l2.081 4.162L18 23.995l-5.7-6.333zm1.236 2l-.919 1.838L18 21.005l3.3-3.667l-.918-1.838zM8 16a4 4 0 0 0-4 4h7.05v2H2v-2a6 6 0 0 1 6-6h3v2z"
                 />
               </svg>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <!-- Service -->
-      <section id="service" class="section bg-sectionBgSecondary">
-        <div class="flex flex-col gap-10 lg:px-12">
-          <div
-            class="animasiKeAtas flex flex-col items-center justify-center gap-3 text-center"
-          >
-            <h1 class="judulSection">How Can We Help?</h1>
-            <p class="subtitle">
-              Our platform is designed to make buying, selling, and renting
-              properties seamless and efficient.
-            </p>
-          </div>
-
-          <div
-            class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-4"
-          >
-            <div id="serviceCard" class="serviceCard animasiKeKiriCard">
-              <img src="assets/image/icon/Group 17.png" alt="" />
-              <h1 class="font-poppins text-3xl font-semibold text-biru">
-                Buying Property
-              </h1>
-              <p class="paragrafService">
-                Explore homes, apartments, or land with complete, easy-to-access
-                information.
+              <h3 class="boxHeaderAbout">Professional travel agent</h3>
+              <p class="paragraphBoxAbout">
+                Rely on our travel agents' extensive experience to design your
+                ideal trip.
               </p>
             </div>
-            <div id="serviceCard" class="serviceCard animasiKeKiriCard">
-              <img src="assets/image/icon/Group 18.png" alt="" />
-              <h1 class="font-poppins text-3xl font-semibold text-biru">
-                Selling Property
-              </h1>
-              <p class="paragrafService">
-                Maximize your property's value with expert marketing and wide
-                networks.
-              </p>
-            </div>
-            <div id="serviceCard" class="serviceCard animasiKeKiriCard">
-              <img src="assets/image/icon/Group 19.png" alt="" />
-              <h1 class="font-poppins text-3xl font-semibold text-biru">
-                Renting Property
-              </h1>
-              <p class="paragrafService">
-                Easily find or list rentals for temporary housing, residence or
-                business.
-              </p>
-            </div>
-            <div id="serviceCard" class="serviceCard animasiKeKiriCard">
-              <img src="assets/image/icon/Group 20.png" alt="" />
-              <h1 class="font-poppins text-3xl font-semibold text-biru">
-                Consultation
-              </h1>
-              <p class="paragrafService">
-                Understanding the client's goals to find a property that suits
-                their needs.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Features -->
-      <section id="features" class="section">
-        <div class="">
-          <div
-            class="animasiKeAtas flex flex-col items-center justify-center gap-3 text-center"
-          >
-            <h1 class="judulSection">
-              <span class="text-black">Featured</span> Property
-            </h1>
-            <p class="subtitle lg:px-56">
-              In this property, there are various interesting options, you are
-              free to look around and explore the property that suits your
-              wishes.
-            </p>
-          </div>
-
-          <div id="featuredSwiper" class="swiper mySwiper mt-12">
-            <div class="swiper-wrapper py-12">
-              <div class="swiper-slide animasiKeKiriCard2 h-full w-full">
-                <div
-                  class="relative h-[320px] w-full rounded-3xl lg:h-[430px] lg:w-full"
-                >
-                  <img
-                    src="assets/image/featured/featured (1).jpeg"
-                    alt=""
-                    class="h-full w-full rounded-3xl object-cover"
-                  />
-                </div>
-                <div class="flex w-full items-center justify-center">
-                  <div
-                    class="absolute bottom-0 mb-3 h-fit w-fit rounded-xl bg-featuredTextBgColor px-3 py-2 text-left text-white lg:mb-5"
-                  >
-                    <h1 class="font-poppins text-sm md:text-xl">
-                      <span class="font-semibold">$ 2,545</span> /month
-                    </h1>
-                    <p class="font-poppins text-sm md:text-xl">Classic house</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide animasiKeKiriCard2 h-full w-full">
-                <div
-                  class="relative h-[320px] w-full rounded-3xl lg:h-[430px] lg:w-full"
-                >
-                  <img
-                    src="assets/image/featured/featured (2).jpeg"
-                    alt=""
-                    class="h-full w-full rounded-3xl object-cover"
-                  />
-                </div>
-                <div class="flex w-full items-center justify-center">
-                  <div
-                    class="absolute bottom-0 mb-3 h-fit w-fit rounded-xl bg-featuredTextBgColor px-3 py-2 text-left text-white lg:mb-5"
-                  >
-                    <h1 class="font-poppins text-sm md:text-xl">
-                      <span class="font-semibold">$ 2,545</span> /month
-                    </h1>
-                    <p class="font-poppins text-sm md:text-xl">Classic house</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide animasiKeKiriCard2 h-full w-full">
-                <div
-                  class="relative h-[320px] w-full rounded-3xl lg:h-[430px] lg:w-full"
-                >
-                  <img
-                    src="assets/image/featured/featured (3).jpeg"
-                    alt=""
-                    class="h-full w-full rounded-3xl object-cover"
-                  />
-                </div>
-                <div class="flex w-full items-center justify-center">
-                  <div
-                    class="absolute bottom-0 mb-3 h-fit w-fit rounded-xl bg-featuredTextBgColor px-3 py-2 text-left text-white lg:mb-5"
-                  >
-                    <h1 class="font-poppins text-sm md:text-xl">
-                      <span class="font-semibold">$ 2,545</span> /month
-                    </h1>
-                    <p class="font-poppins text-sm md:text-xl">Classic house</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide animasiKeKiriCard2 h-full w-full">
-                <div
-                  class="relative h-[320px] w-full rounded-3xl lg:h-[430px] lg:w-full"
-                >
-                  <img
-                    src="assets/image/featured/featured (1).jpeg"
-                    alt=""
-                    class="h-full w-full rounded-3xl object-cover"
-                  />
-                </div>
-                <div class="flex w-full items-center justify-center">
-                  <div
-                    class="absolute bottom-0 mb-3 h-fit w-fit rounded-xl bg-featuredTextBgColor px-3 py-2 text-left text-white lg:mb-5"
-                  >
-                    <h1 class="font-poppins text-sm md:text-xl">
-                      <span class="font-semibold">$ 2,545</span> /month
-                    </h1>
-                    <p class="font-poppins text-sm md:text-xl">Classic house</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide animasiKeKiriCard2 h-full w-full">
-                <div
-                  class="relative h-[320px] w-full rounded-3xl lg:h-[430px] lg:w-full"
-                >
-                  <img
-                    src="assets/image/featured/featured (2).jpeg"
-                    alt=""
-                    class="h-full w-full rounded-3xl object-cover"
-                  />
-                </div>
-                <div class="flex w-full items-center justify-center">
-                  <div
-                    class="absolute bottom-0 mb-3 h-fit w-fit rounded-xl bg-featuredTextBgColor px-3 py-2 text-left text-white lg:mb-5"
-                  >
-                    <h1 class="font-poppins text-sm md:text-xl">
-                      <span class="font-semibold">$ 2,545</span> /month
-                    </h1>
-                    <p class="font-poppins text-sm md:text-xl">Classic house</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Latest -->
-      <section id="latest" class="section bg-sectionBgSecondary">
-        <div class="flex flex-col gap-5">
-          <div
-            class="animasiKeAtas flex flex-col items-center justify-center gap-3 text-center"
-          >
-            <h1 class="judulSection">
-              <span class="text-black">Latest</span> Property
-            </h1>
-            <p class="subtitle lg:px-56">
-              In this last property, there are various options available. You
-              can choose to rent or buy according to your preferences and needs.
-            </p>
-          </div>
-
-          <div class="flex flex-col gap-5">
-            <div
-              class="animasiKeAtas grid w-full grid-cols-2 place-content-between gap-4 rounded-lg bg-white p-4 md:grid-cols-4 lg:grid-cols-[1fr_1fr_1fr_1fr_auto]"
-            >
-              <div class="border-r-2 pr-4">
-                <p class="font-poppins text-sm text-paragraph">Location</p>
-                <div class="flex flex-row justify-between">
-                  <h1 class="font-poppins text-xl font-semibold">USA</h1>
-                  <div
-                    class="flex h-6 w-6 items-center justify-center rounded-full bg-biruMuda p-1 text-biru"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12"
-                      height="24"
-                      viewBox="0 0 12 24"
-                      class="rotate-90"
-                    >
-                      <defs>
-                        <path
-                          id="weuiArrowOutlined0"
-                          fill="currentColor"
-                          d="m7.588 12.43l-1.061 1.06L.748 7.713a.996.996 0 0 1 0-1.413L6.527.52l1.06 1.06l-5.424 5.425z"
-                        />
-                      </defs>
-                      <use
-                        fill-rule="evenodd"
-                        href="#weuiArrowOutlined0"
-                        transform="rotate(-180 5.02 9.505)"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="border-r-2 pr-4">
-                <p class="font-poppins text-sm text-paragraph">Need</p>
-                <div class="flex flex-row justify-between">
-                  <h1 class="font-poppins text-xl font-semibold">For rent</h1>
-                  <div
-                    class="flex h-6 w-6 items-center justify-center rounded-full bg-biruMuda p-1 text-biru"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12"
-                      height="24"
-                      viewBox="0 0 12 24"
-                      class="rotate-90"
-                    >
-                      <defs>
-                        <path
-                          id="weuiArrowOutlined0"
-                          fill="currentColor"
-                          d="m7.588 12.43l-1.061 1.06L.748 7.713a.996.996 0 0 1 0-1.413L6.527.52l1.06 1.06l-5.424 5.425z"
-                        />
-                      </defs>
-                      <use
-                        fill-rule="evenodd"
-                        href="#weuiArrowOutlined0"
-                        transform="rotate(-180 5.02 9.505)"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="border-r-2 pr-4">
-                <p class="font-poppins text-sm text-paragraph">Price</p>
-                <div class="flex flex-row justify-between">
-                  <h1 class="font-poppins text-xl font-semibold">$300-$800</h1>
-                  <div
-                    class="flex h-6 w-6 items-center justify-center rounded-full bg-biruMuda p-1 text-biru"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12"
-                      height="24"
-                      viewBox="0 0 12 24"
-                      class="rotate-90"
-                    >
-                      <defs>
-                        <path
-                          id="weuiArrowOutlined0"
-                          fill="currentColor"
-                          d="m7.588 12.43l-1.061 1.06L.748 7.713a.996.996 0 0 1 0-1.413L6.527.52l1.06 1.06l-5.424 5.425z"
-                        />
-                      </defs>
-                      <use
-                        fill-rule="evenodd"
-                        href="#weuiArrowOutlined0"
-                        transform="rotate(-180 5.02 9.505)"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="border-r-2 pr-4">
-                <p class="font-poppins text-sm text-paragraph">Property type</p>
-                <div class="flex flex-row justify-between">
-                  <h1 class="font-poppins text-xl font-semibold">Villa</h1>
-                  <div
-                    class="flex h-6 w-6 items-center justify-center rounded-full bg-biruMuda p-1 text-biru"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12"
-                      height="24"
-                      viewBox="0 0 12 24"
-                      class="rotate-90"
-                    >
-                      <defs>
-                        <path
-                          id="weuiArrowOutlined0"
-                          fill="currentColor"
-                          d="m7.588 12.43l-1.061 1.06L.748 7.713a.996.996 0 0 1 0-1.413L6.527.52l1.06 1.06l-5.424 5.425z"
-                        />
-                      </defs>
-                      <use
-                        fill-rule="evenodd"
-                        href="#weuiArrowOutlined0"
-                        transform="rotate(-180 5.02 9.505)"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center justify-start lg:justify-end">
-                <button class="button rounded-lg bg-biru">Search</button>
-              </div>
-            </div>
-
-            <div
-              class="cardContainer grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-            >
-              <div class="propertyCard animasiOpacity">
-                <div class="h-60 w-full md:h-48">
-                  <img
-                    src="assets/image/latest/latest (1).jpeg"
-                    alt=""
-                    class="h-full w-full rounded-3xl object-cover"
-                  />
-                </div>
-                <div class="flex flex-col gap-2">
-                  <h1 class="font-inter text-xl">Modern villa</h1>
-                  <div class="flex flex-row justify-between px-4">
-                    <div class="flex flex-row text-cardIconColor">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M12.004 11.73q.667 0 1.14-.475t.472-1.143t-.476-1.14t-1.143-.472t-1.14.476t-.472 1.143t.475 1.14t1.144.472M12 19.677q2.82-2.454 4.458-4.991t1.638-4.39q0-2.744-1.737-4.53Q14.62 3.981 12 3.981T7.641 5.766t-1.737 4.53q0 1.852 1.638 4.39T12 19.677m0 1.342q-3.525-3.117-5.31-5.814q-1.786-2.697-1.786-4.909q0-3.173 2.066-5.234Q9.037 3 12 3t5.03 2.062q2.066 2.061 2.066 5.234q0 2.212-1.785 4.909q-1.786 2.697-5.311 5.814m0-10.903"
-                        />
-                      </svg>
-                      <p>London</p>
-                    </div>
-
-                    <h1
-                      class="font-poppins text-xl font-semibold text-priceColor"
-                    >
-                      $ 335
-                    </h1>
-                  </div>
-                  <div class="px-4">
-                    <hr class="w-full border border-gray-300" />
-                  </div>
-                  <div class="flex flex-row justify-between px-4">
-                    <div class="bed flex flex-row gap-2">
-                      <svg
-                        class="text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M3 17.5V13q0-.444.256-.946T4 11.3V9q0-.846.577-1.423T6 7h4.5q.517 0 .883.213q.365.212.617.587q.252-.375.617-.587Q12.983 7 13.5 7H18q.846 0 1.423.577T20 9v2.3q.489.252.744.754q.256.502.256.946v4.5q0 .213-.144.356t-.357.144t-.356-.144T20 17.5V16H4v1.5q0 .213-.144.356T3.499 18t-.356-.144T3 17.5m9.5-6.5H19V9q0-.425-.288-.712T18 8h-4.5q-.425 0-.712.288T12.5 9zM5 11h6.5V9q0-.425-.288-.712T10.5 8H6q-.425 0-.712.288T5 9zm-1 4h16v-2q0-.425-.288-.712T19 12H5q-.425 0-.712.288T4 13zm16 0H4z"
-                        />
-                      </svg>
-                      <p class="font-inter text-cardIconColor">2</p>
-                    </div>
-                    <div class="bathroom flex flex-row gap-2">
-                      <svg
-                        class="text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 512 512"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M464 280H80V100a51.26 51.26 0 0 1 15.113-36.485l.4-.4a51.69 51.69 0 0 1 58.6-10.162a79.1 79.1 0 0 0 11.778 96.627l10.951 10.951l-20.157 20.158l22.626 22.626l20.157-20.157L311.157 71.471l20.157-20.157l-22.627-22.627l-20.158 20.157l-10.951-10.951a79.086 79.086 0 0 0-100.929-8.976A83.61 83.61 0 0 0 72.887 40.485l-.4.4A83.05 83.05 0 0 0 48 100v180H16v32h32v30.7a24 24 0 0 0 1.232 7.589L79 439.589A23.97 23.97 0 0 0 101.766 456h12.9L103 496h33.333L148 456h208.1l12 40h33.4l-12-40h20.73A23.97 23.97 0 0 0 433 439.589l29.766-89.3A24 24 0 0 0 464 342.7V312h32v-32ZM188.52 60.52a47.025 47.025 0 0 1 66.431 0L265.9 71.471L199.471 137.9l-10.951-10.949a47.027 47.027 0 0 1 0-66.431M432 341.4L404.468 424H107.532L80 341.4V312h352Z"
-                        />
-                      </svg>
-                      <p class="font-inter text-cardIconColor">2</p>
-                    </div>
-                    <div class="detail flex flex-row gap-2">
-                      <svg
-                        class="text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          fill-rule="evenodd"
-                          d="M11.943 1.25c-2.309 0-4.118 0-5.53.19c-1.444.194-2.584.6-3.479 1.494c-.895.895-1.3 2.035-1.494 3.48c-.19 1.411-.19 3.22-.19 5.529v.114c0 2.309 0 4.118.19 5.53c.194 1.444.6 2.584 1.494 3.479c.895.895 2.035 1.3 3.48 1.494c1.411.19 3.22.19 5.529.19h.114c2.309 0 4.118 0 5.53-.19c1.444-.194 2.584-.6 3.479-1.494c.895-.895 1.3-2.035 1.494-3.48c.19-1.411.19-3.22.19-5.529v-.114c0-2.309 0-4.118-.19-5.53c-.194-1.444-.6-2.584-1.494-3.479c-.895-.895-2.035-1.3-3.48-1.494c-1.411-.19-3.22-.19-5.529-.19zM3.995 3.995c.57-.57 1.34-.897 2.619-1.069c1.3-.174 3.008-.176 5.386-.176s4.086.002 5.386.176c.882.119 1.522.311 2.021.606L14.75 8.189V6.25a.75.75 0 0 0-1.5 0V10c0 .414.336.75.75.75h3.75a.75.75 0 0 0 0-1.5h-1.94l4.658-4.657c.295.499.487 1.139.606 2.02c.174 1.3.176 3.009.176 5.387s-.002 4.086-.176 5.386c-.172 1.279-.5 2.05-1.069 2.62c-.57.569-1.34.896-2.619 1.068c-1.3.174-3.008.176-5.386.176s-4.086-.002-5.386-.176c-.882-.119-1.522-.311-2.021-.606l4.657-4.657v1.939a.75.75 0 0 0 1.5 0V14a.75.75 0 0 0-.75-.75H6.25a.75.75 0 0 0 0 1.5h1.94l-4.658 4.657c-.295-.499-.487-1.139-.606-2.02c-.174-1.3-.176-3.009-.176-5.387s.002-4.086.176-5.386c.172-1.279.5-2.05 1.069-2.62"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                      <p class="font-inter text-cardIconColor">Detail</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="propertyCard animasiOpacity">
-                <div class="h-60 w-full md:h-48">
-                  <img
-                    src="assets/image/latest/latest (1).jpeg"
-                    alt=""
-                    class="h-full w-full rounded-3xl object-cover"
-                  />
-                </div>
-                <div class="flex flex-col gap-2">
-                  <h1 class="font-inter text-xl">Modern villa</h1>
-                  <div class="flex flex-row justify-between px-4">
-                    <div class="flex flex-row text-cardIconColor">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M12.004 11.73q.667 0 1.14-.475t.472-1.143t-.476-1.14t-1.143-.472t-1.14.476t-.472 1.143t.475 1.14t1.144.472M12 19.677q2.82-2.454 4.458-4.991t1.638-4.39q0-2.744-1.737-4.53Q14.62 3.981 12 3.981T7.641 5.766t-1.737 4.53q0 1.852 1.638 4.39T12 19.677m0 1.342q-3.525-3.117-5.31-5.814q-1.786-2.697-1.786-4.909q0-3.173 2.066-5.234Q9.037 3 12 3t5.03 2.062q2.066 2.061 2.066 5.234q0 2.212-1.785 4.909q-1.786 2.697-5.311 5.814m0-10.903"
-                        />
-                      </svg>
-                      <p>London</p>
-                    </div>
-
-                    <h1
-                      class="font-poppins text-xl font-semibold text-priceColor"
-                    >
-                      $ 335
-                    </h1>
-                  </div>
-                  <div class="px-4">
-                    <hr class="w-full border border-gray-300" />
-                  </div>
-                  <div class="flex flex-row justify-between px-4">
-                    <div class="bed flex flex-row gap-2">
-                      <svg
-                        class="text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M3 17.5V13q0-.444.256-.946T4 11.3V9q0-.846.577-1.423T6 7h4.5q.517 0 .883.213q.365.212.617.587q.252-.375.617-.587Q12.983 7 13.5 7H18q.846 0 1.423.577T20 9v2.3q.489.252.744.754q.256.502.256.946v4.5q0 .213-.144.356t-.357.144t-.356-.144T20 17.5V16H4v1.5q0 .213-.144.356T3.499 18t-.356-.144T3 17.5m9.5-6.5H19V9q0-.425-.288-.712T18 8h-4.5q-.425 0-.712.288T12.5 9zM5 11h6.5V9q0-.425-.288-.712T10.5 8H6q-.425 0-.712.288T5 9zm-1 4h16v-2q0-.425-.288-.712T19 12H5q-.425 0-.712.288T4 13zm16 0H4z"
-                        />
-                      </svg>
-                      <p class="font-inter text-cardIconColor">2</p>
-                    </div>
-                    <div class="bathroom flex flex-row gap-2">
-                      <svg
-                        class="text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 512 512"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M464 280H80V100a51.26 51.26 0 0 1 15.113-36.485l.4-.4a51.69 51.69 0 0 1 58.6-10.162a79.1 79.1 0 0 0 11.778 96.627l10.951 10.951l-20.157 20.158l22.626 22.626l20.157-20.157L311.157 71.471l20.157-20.157l-22.627-22.627l-20.158 20.157l-10.951-10.951a79.086 79.086 0 0 0-100.929-8.976A83.61 83.61 0 0 0 72.887 40.485l-.4.4A83.05 83.05 0 0 0 48 100v180H16v32h32v30.7a24 24 0 0 0 1.232 7.589L79 439.589A23.97 23.97 0 0 0 101.766 456h12.9L103 496h33.333L148 456h208.1l12 40h33.4l-12-40h20.73A23.97 23.97 0 0 0 433 439.589l29.766-89.3A24 24 0 0 0 464 342.7V312h32v-32ZM188.52 60.52a47.025 47.025 0 0 1 66.431 0L265.9 71.471L199.471 137.9l-10.951-10.949a47.027 47.027 0 0 1 0-66.431M432 341.4L404.468 424H107.532L80 341.4V312h352Z"
-                        />
-                      </svg>
-                      <p class="font-inter text-cardIconColor">2</p>
-                    </div>
-                    <div class="detail flex flex-row gap-2">
-                      <svg
-                        class="text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          fill-rule="evenodd"
-                          d="M11.943 1.25c-2.309 0-4.118 0-5.53.19c-1.444.194-2.584.6-3.479 1.494c-.895.895-1.3 2.035-1.494 3.48c-.19 1.411-.19 3.22-.19 5.529v.114c0 2.309 0 4.118.19 5.53c.194 1.444.6 2.584 1.494 3.479c.895.895 2.035 1.3 3.48 1.494c1.411.19 3.22.19 5.529.19h.114c2.309 0 4.118 0 5.53-.19c1.444-.194 2.584-.6 3.479-1.494c.895-.895 1.3-2.035 1.494-3.48c.19-1.411.19-3.22.19-5.529v-.114c0-2.309 0-4.118-.19-5.53c-.194-1.444-.6-2.584-1.494-3.479c-.895-.895-2.035-1.3-3.48-1.494c-1.411-.19-3.22-.19-5.529-.19zM3.995 3.995c.57-.57 1.34-.897 2.619-1.069c1.3-.174 3.008-.176 5.386-.176s4.086.002 5.386.176c.882.119 1.522.311 2.021.606L14.75 8.189V6.25a.75.75 0 0 0-1.5 0V10c0 .414.336.75.75.75h3.75a.75.75 0 0 0 0-1.5h-1.94l4.658-4.657c.295.499.487 1.139.606 2.02c.174 1.3.176 3.009.176 5.387s-.002 4.086-.176 5.386c-.172 1.279-.5 2.05-1.069 2.62c-.57.569-1.34.896-2.619 1.068c-1.3.174-3.008.176-5.386.176s-4.086-.002-5.386-.176c-.882-.119-1.522-.311-2.021-.606l4.657-4.657v1.939a.75.75 0 0 0 1.5 0V14a.75.75 0 0 0-.75-.75H6.25a.75.75 0 0 0 0 1.5h1.94l-4.658 4.657c-.295-.499-.487-1.139-.606-2.02c-.174-1.3-.176-3.009-.176-5.387s.002-4.086.176-5.386c.172-1.279.5-2.05 1.069-2.62"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                      <p class="font-inter text-cardIconColor">Detail</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="propertyCard animasiOpacity">
-                <div class="h-60 w-full md:h-48">
-                  <img
-                    src="assets/image/latest/latest (1).jpeg"
-                    alt=""
-                    class="h-full w-full rounded-3xl object-cover"
-                  />
-                </div>
-                <div class="flex flex-col gap-2">
-                  <h1 class="font-inter text-xl">Modern villa</h1>
-                  <div class="flex flex-row justify-between px-4">
-                    <div class="flex flex-row text-cardIconColor">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M12.004 11.73q.667 0 1.14-.475t.472-1.143t-.476-1.14t-1.143-.472t-1.14.476t-.472 1.143t.475 1.14t1.144.472M12 19.677q2.82-2.454 4.458-4.991t1.638-4.39q0-2.744-1.737-4.53Q14.62 3.981 12 3.981T7.641 5.766t-1.737 4.53q0 1.852 1.638 4.39T12 19.677m0 1.342q-3.525-3.117-5.31-5.814q-1.786-2.697-1.786-4.909q0-3.173 2.066-5.234Q9.037 3 12 3t5.03 2.062q2.066 2.061 2.066 5.234q0 2.212-1.785 4.909q-1.786 2.697-5.311 5.814m0-10.903"
-                        />
-                      </svg>
-                      <p>London</p>
-                    </div>
-
-                    <h1
-                      class="font-poppins text-xl font-semibold text-priceColor"
-                    >
-                      $ 335
-                    </h1>
-                  </div>
-                  <div class="px-4">
-                    <hr class="w-full border border-gray-300" />
-                  </div>
-                  <div class="flex flex-row justify-between px-4">
-                    <div class="bed flex flex-row gap-2">
-                      <svg
-                        class="text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M3 17.5V13q0-.444.256-.946T4 11.3V9q0-.846.577-1.423T6 7h4.5q.517 0 .883.213q.365.212.617.587q.252-.375.617-.587Q12.983 7 13.5 7H18q.846 0 1.423.577T20 9v2.3q.489.252.744.754q.256.502.256.946v4.5q0 .213-.144.356t-.357.144t-.356-.144T20 17.5V16H4v1.5q0 .213-.144.356T3.499 18t-.356-.144T3 17.5m9.5-6.5H19V9q0-.425-.288-.712T18 8h-4.5q-.425 0-.712.288T12.5 9zM5 11h6.5V9q0-.425-.288-.712T10.5 8H6q-.425 0-.712.288T5 9zm-1 4h16v-2q0-.425-.288-.712T19 12H5q-.425 0-.712.288T4 13zm16 0H4z"
-                        />
-                      </svg>
-                      <p class="font-inter text-cardIconColor">2</p>
-                    </div>
-                    <div class="bathroom flex flex-row gap-2">
-                      <svg
-                        class="text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 512 512"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M464 280H80V100a51.26 51.26 0 0 1 15.113-36.485l.4-.4a51.69 51.69 0 0 1 58.6-10.162a79.1 79.1 0 0 0 11.778 96.627l10.951 10.951l-20.157 20.158l22.626 22.626l20.157-20.157L311.157 71.471l20.157-20.157l-22.627-22.627l-20.158 20.157l-10.951-10.951a79.086 79.086 0 0 0-100.929-8.976A83.61 83.61 0 0 0 72.887 40.485l-.4.4A83.05 83.05 0 0 0 48 100v180H16v32h32v30.7a24 24 0 0 0 1.232 7.589L79 439.589A23.97 23.97 0 0 0 101.766 456h12.9L103 496h33.333L148 456h208.1l12 40h33.4l-12-40h20.73A23.97 23.97 0 0 0 433 439.589l29.766-89.3A24 24 0 0 0 464 342.7V312h32v-32ZM188.52 60.52a47.025 47.025 0 0 1 66.431 0L265.9 71.471L199.471 137.9l-10.951-10.949a47.027 47.027 0 0 1 0-66.431M432 341.4L404.468 424H107.532L80 341.4V312h352Z"
-                        />
-                      </svg>
-                      <p class="font-inter text-cardIconColor">2</p>
-                    </div>
-                    <div class="detail flex flex-row gap-2">
-                      <svg
-                        class="text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          fill-rule="evenodd"
-                          d="M11.943 1.25c-2.309 0-4.118 0-5.53.19c-1.444.194-2.584.6-3.479 1.494c-.895.895-1.3 2.035-1.494 3.48c-.19 1.411-.19 3.22-.19 5.529v.114c0 2.309 0 4.118.19 5.53c.194 1.444.6 2.584 1.494 3.479c.895.895 2.035 1.3 3.48 1.494c1.411.19 3.22.19 5.529.19h.114c2.309 0 4.118 0 5.53-.19c1.444-.194 2.584-.6 3.479-1.494c.895-.895 1.3-2.035 1.494-3.48c.19-1.411.19-3.22.19-5.529v-.114c0-2.309 0-4.118-.19-5.53c-.194-1.444-.6-2.584-1.494-3.479c-.895-.895-2.035-1.3-3.48-1.494c-1.411-.19-3.22-.19-5.529-.19zM3.995 3.995c.57-.57 1.34-.897 2.619-1.069c1.3-.174 3.008-.176 5.386-.176s4.086.002 5.386.176c.882.119 1.522.311 2.021.606L14.75 8.189V6.25a.75.75 0 0 0-1.5 0V10c0 .414.336.75.75.75h3.75a.75.75 0 0 0 0-1.5h-1.94l4.658-4.657c.295.499.487 1.139.606 2.02c.174 1.3.176 3.009.176 5.387s-.002 4.086-.176 5.386c-.172 1.279-.5 2.05-1.069 2.62c-.57.569-1.34.896-2.619 1.068c-1.3.174-3.008.176-5.386.176s-4.086-.002-5.386-.176c-.882-.119-1.522-.311-2.021-.606l4.657-4.657v1.939a.75.75 0 0 0 1.5 0V14a.75.75 0 0 0-.75-.75H6.25a.75.75 0 0 0 0 1.5h1.94l-4.658 4.657c-.295-.499-.487-1.139-.606-2.02c-.174-1.3-.176-3.009-.176-5.387s.002-4.086.176-5.386c.172-1.279.5-2.05 1.069-2.62"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                      <p class="font-inter text-cardIconColor">Detail</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="propertyCard animasiOpacity">
-                <div class="h-60 w-full md:h-48">
-                  <img
-                    src="assets/image/latest/latest (1).jpeg"
-                    alt=""
-                    class="h-full w-full rounded-3xl object-cover"
-                  />
-                </div>
-                <div class="flex flex-col gap-2">
-                  <h1 class="font-inter text-xl">Modern villa</h1>
-                  <div class="flex flex-row justify-between px-4">
-                    <div class="flex flex-row text-cardIconColor">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M12.004 11.73q.667 0 1.14-.475t.472-1.143t-.476-1.14t-1.143-.472t-1.14.476t-.472 1.143t.475 1.14t1.144.472M12 19.677q2.82-2.454 4.458-4.991t1.638-4.39q0-2.744-1.737-4.53Q14.62 3.981 12 3.981T7.641 5.766t-1.737 4.53q0 1.852 1.638 4.39T12 19.677m0 1.342q-3.525-3.117-5.31-5.814q-1.786-2.697-1.786-4.909q0-3.173 2.066-5.234Q9.037 3 12 3t5.03 2.062q2.066 2.061 2.066 5.234q0 2.212-1.785 4.909q-1.786 2.697-5.311 5.814m0-10.903"
-                        />
-                      </svg>
-                      <p>London</p>
-                    </div>
-
-                    <h1
-                      class="font-poppins text-xl font-semibold text-priceColor"
-                    >
-                      $ 335
-                    </h1>
-                  </div>
-                  <div class="px-4">
-                    <hr class="w-full border border-gray-300" />
-                  </div>
-                  <div class="flex flex-row justify-between px-4">
-                    <div class="bed flex flex-row gap-2">
-                      <svg
-                        class="text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M3 17.5V13q0-.444.256-.946T4 11.3V9q0-.846.577-1.423T6 7h4.5q.517 0 .883.213q.365.212.617.587q.252-.375.617-.587Q12.983 7 13.5 7H18q.846 0 1.423.577T20 9v2.3q.489.252.744.754q.256.502.256.946v4.5q0 .213-.144.356t-.357.144t-.356-.144T20 17.5V16H4v1.5q0 .213-.144.356T3.499 18t-.356-.144T3 17.5m9.5-6.5H19V9q0-.425-.288-.712T18 8h-4.5q-.425 0-.712.288T12.5 9zM5 11h6.5V9q0-.425-.288-.712T10.5 8H6q-.425 0-.712.288T5 9zm-1 4h16v-2q0-.425-.288-.712T19 12H5q-.425 0-.712.288T4 13zm16 0H4z"
-                        />
-                      </svg>
-                      <p class="font-inter text-cardIconColor">2</p>
-                    </div>
-                    <div class="bathroom flex flex-row gap-2">
-                      <svg
-                        class="text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 512 512"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M464 280H80V100a51.26 51.26 0 0 1 15.113-36.485l.4-.4a51.69 51.69 0 0 1 58.6-10.162a79.1 79.1 0 0 0 11.778 96.627l10.951 10.951l-20.157 20.158l22.626 22.626l20.157-20.157L311.157 71.471l20.157-20.157l-22.627-22.627l-20.158 20.157l-10.951-10.951a79.086 79.086 0 0 0-100.929-8.976A83.61 83.61 0 0 0 72.887 40.485l-.4.4A83.05 83.05 0 0 0 48 100v180H16v32h32v30.7a24 24 0 0 0 1.232 7.589L79 439.589A23.97 23.97 0 0 0 101.766 456h12.9L103 496h33.333L148 456h208.1l12 40h33.4l-12-40h20.73A23.97 23.97 0 0 0 433 439.589l29.766-89.3A24 24 0 0 0 464 342.7V312h32v-32ZM188.52 60.52a47.025 47.025 0 0 1 66.431 0L265.9 71.471L199.471 137.9l-10.951-10.949a47.027 47.027 0 0 1 0-66.431M432 341.4L404.468 424H107.532L80 341.4V312h352Z"
-                        />
-                      </svg>
-                      <p class="font-inter text-cardIconColor">2</p>
-                    </div>
-                    <div class="detail flex flex-row gap-2">
-                      <svg
-                        class="text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          fill-rule="evenodd"
-                          d="M11.943 1.25c-2.309 0-4.118 0-5.53.19c-1.444.194-2.584.6-3.479 1.494c-.895.895-1.3 2.035-1.494 3.48c-.19 1.411-.19 3.22-.19 5.529v.114c0 2.309 0 4.118.19 5.53c.194 1.444.6 2.584 1.494 3.479c.895.895 2.035 1.3 3.48 1.494c1.411.19 3.22.19 5.529.19h.114c2.309 0 4.118 0 5.53-.19c1.444-.194 2.584-.6 3.479-1.494c.895-.895 1.3-2.035 1.494-3.48c.19-1.411.19-3.22.19-5.529v-.114c0-2.309 0-4.118-.19-5.53c-.194-1.444-.6-2.584-1.494-3.479c-.895-.895-2.035-1.3-3.48-1.494c-1.411-.19-3.22-.19-5.529-.19zM3.995 3.995c.57-.57 1.34-.897 2.619-1.069c1.3-.174 3.008-.176 5.386-.176s4.086.002 5.386.176c.882.119 1.522.311 2.021.606L14.75 8.189V6.25a.75.75 0 0 0-1.5 0V10c0 .414.336.75.75.75h3.75a.75.75 0 0 0 0-1.5h-1.94l4.658-4.657c.295.499.487 1.139.606 2.02c.174 1.3.176 3.009.176 5.387s-.002 4.086-.176 5.386c-.172 1.279-.5 2.05-1.069 2.62c-.57.569-1.34.896-2.619 1.068c-1.3.174-3.008.176-5.386.176s-4.086-.002-5.386-.176c-.882-.119-1.522-.311-2.021-.606l4.657-4.657v1.939a.75.75 0 0 0 1.5 0V14a.75.75 0 0 0-.75-.75H6.25a.75.75 0 0 0 0 1.5h1.94l-4.658 4.657c-.295-.499-.487-1.139-.606-2.02c-.174-1.3-.176-3.009-.176-5.387s.002-4.086.176-5.386c.172-1.279.5-2.05 1.069-2.62"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                      <p class="font-inter text-cardIconColor">Detail</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="propertyCard animasiOpacity">
-                <div class="h-60 w-full md:h-48">
-                  <img
-                    src="assets/image/latest/latest (1).jpeg"
-                    alt=""
-                    class="h-full w-full rounded-3xl object-cover"
-                  />
-                </div>
-                <div class="flex flex-col gap-2">
-                  <h1 class="font-inter text-xl">Modern villa</h1>
-                  <div class="flex flex-row justify-between px-4">
-                    <div class="flex flex-row text-cardIconColor">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M12.004 11.73q.667 0 1.14-.475t.472-1.143t-.476-1.14t-1.143-.472t-1.14.476t-.472 1.143t.475 1.14t1.144.472M12 19.677q2.82-2.454 4.458-4.991t1.638-4.39q0-2.744-1.737-4.53Q14.62 3.981 12 3.981T7.641 5.766t-1.737 4.53q0 1.852 1.638 4.39T12 19.677m0 1.342q-3.525-3.117-5.31-5.814q-1.786-2.697-1.786-4.909q0-3.173 2.066-5.234Q9.037 3 12 3t5.03 2.062q2.066 2.061 2.066 5.234q0 2.212-1.785 4.909q-1.786 2.697-5.311 5.814m0-10.903"
-                        />
-                      </svg>
-                      <p>London</p>
-                    </div>
-
-                    <h1
-                      class="font-poppins text-xl font-semibold text-priceColor"
-                    >
-                      $ 335
-                    </h1>
-                  </div>
-                  <div class="px-4">
-                    <hr class="w-full border border-gray-300" />
-                  </div>
-                  <div class="flex flex-row justify-between px-4">
-                    <div class="bed flex flex-row gap-2">
-                      <svg
-                        class="text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M3 17.5V13q0-.444.256-.946T4 11.3V9q0-.846.577-1.423T6 7h4.5q.517 0 .883.213q.365.212.617.587q.252-.375.617-.587Q12.983 7 13.5 7H18q.846 0 1.423.577T20 9v2.3q.489.252.744.754q.256.502.256.946v4.5q0 .213-.144.356t-.357.144t-.356-.144T20 17.5V16H4v1.5q0 .213-.144.356T3.499 18t-.356-.144T3 17.5m9.5-6.5H19V9q0-.425-.288-.712T18 8h-4.5q-.425 0-.712.288T12.5 9zM5 11h6.5V9q0-.425-.288-.712T10.5 8H6q-.425 0-.712.288T5 9zm-1 4h16v-2q0-.425-.288-.712T19 12H5q-.425 0-.712.288T4 13zm16 0H4z"
-                        />
-                      </svg>
-                      <p class="font-inter text-cardIconColor">2</p>
-                    </div>
-                    <div class="bathroom flex flex-row gap-2">
-                      <svg
-                        class="text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 512 512"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M464 280H80V100a51.26 51.26 0 0 1 15.113-36.485l.4-.4a51.69 51.69 0 0 1 58.6-10.162a79.1 79.1 0 0 0 11.778 96.627l10.951 10.951l-20.157 20.158l22.626 22.626l20.157-20.157L311.157 71.471l20.157-20.157l-22.627-22.627l-20.158 20.157l-10.951-10.951a79.086 79.086 0 0 0-100.929-8.976A83.61 83.61 0 0 0 72.887 40.485l-.4.4A83.05 83.05 0 0 0 48 100v180H16v32h32v30.7a24 24 0 0 0 1.232 7.589L79 439.589A23.97 23.97 0 0 0 101.766 456h12.9L103 496h33.333L148 456h208.1l12 40h33.4l-12-40h20.73A23.97 23.97 0 0 0 433 439.589l29.766-89.3A24 24 0 0 0 464 342.7V312h32v-32ZM188.52 60.52a47.025 47.025 0 0 1 66.431 0L265.9 71.471L199.471 137.9l-10.951-10.949a47.027 47.027 0 0 1 0-66.431M432 341.4L404.468 424H107.532L80 341.4V312h352Z"
-                        />
-                      </svg>
-                      <p class="font-inter text-cardIconColor">2</p>
-                    </div>
-                    <div class="detail flex flex-row gap-2">
-                      <svg
-                        class="text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          fill-rule="evenodd"
-                          d="M11.943 1.25c-2.309 0-4.118 0-5.53.19c-1.444.194-2.584.6-3.479 1.494c-.895.895-1.3 2.035-1.494 3.48c-.19 1.411-.19 3.22-.19 5.529v.114c0 2.309 0 4.118.19 5.53c.194 1.444.6 2.584 1.494 3.479c.895.895 2.035 1.3 3.48 1.494c1.411.19 3.22.19 5.529.19h.114c2.309 0 4.118 0 5.53-.19c1.444-.194 2.584-.6 3.479-1.494c.895-.895 1.3-2.035 1.494-3.48c.19-1.411.19-3.22.19-5.529v-.114c0-2.309 0-4.118-.19-5.53c-.194-1.444-.6-2.584-1.494-3.479c-.895-.895-2.035-1.3-3.48-1.494c-1.411-.19-3.22-.19-5.529-.19zM3.995 3.995c.57-.57 1.34-.897 2.619-1.069c1.3-.174 3.008-.176 5.386-.176s4.086.002 5.386.176c.882.119 1.522.311 2.021.606L14.75 8.189V6.25a.75.75 0 0 0-1.5 0V10c0 .414.336.75.75.75h3.75a.75.75 0 0 0 0-1.5h-1.94l4.658-4.657c.295.499.487 1.139.606 2.02c.174 1.3.176 3.009.176 5.387s-.002 4.086-.176 5.386c-.172 1.279-.5 2.05-1.069 2.62c-.57.569-1.34.896-2.619 1.068c-1.3.174-3.008.176-5.386.176s-4.086-.002-5.386-.176c-.882-.119-1.522-.311-2.021-.606l4.657-4.657v1.939a.75.75 0 0 0 1.5 0V14a.75.75 0 0 0-.75-.75H6.25a.75.75 0 0 0 0 1.5h1.94l-4.658 4.657c-.295-.499-.487-1.139-.606-2.02c-.174-1.3-.176-3.009-.176-5.387s.002-4.086.176-5.386c.172-1.279.5-2.05 1.069-2.62"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                      <p class="font-inter text-cardIconColor">Detail</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="propertyCard animasiOpacity">
-                <div class="h-60 w-full md:h-48">
-                  <img
-                    src="assets/image/latest/latest (1).jpeg"
-                    alt=""
-                    class="h-full w-full rounded-3xl object-cover"
-                  />
-                </div>
-                <div class="flex flex-col gap-2">
-                  <h1 class="font-inter text-xl">Modern villa</h1>
-                  <div class="flex flex-row justify-between px-4">
-                    <div class="flex flex-row text-cardIconColor">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M12.004 11.73q.667 0 1.14-.475t.472-1.143t-.476-1.14t-1.143-.472t-1.14.476t-.472 1.143t.475 1.14t1.144.472M12 19.677q2.82-2.454 4.458-4.991t1.638-4.39q0-2.744-1.737-4.53Q14.62 3.981 12 3.981T7.641 5.766t-1.737 4.53q0 1.852 1.638 4.39T12 19.677m0 1.342q-3.525-3.117-5.31-5.814q-1.786-2.697-1.786-4.909q0-3.173 2.066-5.234Q9.037 3 12 3t5.03 2.062q2.066 2.061 2.066 5.234q0 2.212-1.785 4.909q-1.786 2.697-5.311 5.814m0-10.903"
-                        />
-                      </svg>
-                      <p>London</p>
-                    </div>
-
-                    <h1
-                      class="font-poppins text-xl font-semibold text-priceColor"
-                    >
-                      $ 335
-                    </h1>
-                  </div>
-                  <div class="px-4">
-                    <hr class="w-full border border-gray-300" />
-                  </div>
-                  <div class="flex flex-row justify-between px-4">
-                    <div class="bed flex flex-row gap-2">
-                      <svg
-                        class="text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M3 17.5V13q0-.444.256-.946T4 11.3V9q0-.846.577-1.423T6 7h4.5q.517 0 .883.213q.365.212.617.587q.252-.375.617-.587Q12.983 7 13.5 7H18q.846 0 1.423.577T20 9v2.3q.489.252.744.754q.256.502.256.946v4.5q0 .213-.144.356t-.357.144t-.356-.144T20 17.5V16H4v1.5q0 .213-.144.356T3.499 18t-.356-.144T3 17.5m9.5-6.5H19V9q0-.425-.288-.712T18 8h-4.5q-.425 0-.712.288T12.5 9zM5 11h6.5V9q0-.425-.288-.712T10.5 8H6q-.425 0-.712.288T5 9zm-1 4h16v-2q0-.425-.288-.712T19 12H5q-.425 0-.712.288T4 13zm16 0H4z"
-                        />
-                      </svg>
-                      <p class="font-inter text-cardIconColor">2</p>
-                    </div>
-                    <div class="bathroom flex flex-row gap-2">
-                      <svg
-                        class="text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 512 512"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M464 280H80V100a51.26 51.26 0 0 1 15.113-36.485l.4-.4a51.69 51.69 0 0 1 58.6-10.162a79.1 79.1 0 0 0 11.778 96.627l10.951 10.951l-20.157 20.158l22.626 22.626l20.157-20.157L311.157 71.471l20.157-20.157l-22.627-22.627l-20.158 20.157l-10.951-10.951a79.086 79.086 0 0 0-100.929-8.976A83.61 83.61 0 0 0 72.887 40.485l-.4.4A83.05 83.05 0 0 0 48 100v180H16v32h32v30.7a24 24 0 0 0 1.232 7.589L79 439.589A23.97 23.97 0 0 0 101.766 456h12.9L103 496h33.333L148 456h208.1l12 40h33.4l-12-40h20.73A23.97 23.97 0 0 0 433 439.589l29.766-89.3A24 24 0 0 0 464 342.7V312h32v-32ZM188.52 60.52a47.025 47.025 0 0 1 66.431 0L265.9 71.471L199.471 137.9l-10.951-10.949a47.027 47.027 0 0 1 0-66.431M432 341.4L404.468 424H107.532L80 341.4V312h352Z"
-                        />
-                      </svg>
-                      <p class="font-inter text-cardIconColor">2</p>
-                    </div>
-                    <div class="detail flex flex-row gap-2">
-                      <svg
-                        class="text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          fill-rule="evenodd"
-                          d="M11.943 1.25c-2.309 0-4.118 0-5.53.19c-1.444.194-2.584.6-3.479 1.494c-.895.895-1.3 2.035-1.494 3.48c-.19 1.411-.19 3.22-.19 5.529v.114c0 2.309 0 4.118.19 5.53c.194 1.444.6 2.584 1.494 3.479c.895.895 2.035 1.3 3.48 1.494c1.411.19 3.22.19 5.529.19h.114c2.309 0 4.118 0 5.53-.19c1.444-.194 2.584-.6 3.479-1.494c.895-.895 1.3-2.035 1.494-3.48c.19-1.411.19-3.22.19-5.529v-.114c0-2.309 0-4.118-.19-5.53c-.194-1.444-.6-2.584-1.494-3.479c-.895-.895-2.035-1.3-3.48-1.494c-1.411-.19-3.22-.19-5.529-.19zM3.995 3.995c.57-.57 1.34-.897 2.619-1.069c1.3-.174 3.008-.176 5.386-.176s4.086.002 5.386.176c.882.119 1.522.311 2.021.606L14.75 8.189V6.25a.75.75 0 0 0-1.5 0V10c0 .414.336.75.75.75h3.75a.75.75 0 0 0 0-1.5h-1.94l4.658-4.657c.295.499.487 1.139.606 2.02c.174 1.3.176 3.009.176 5.387s-.002 4.086-.176 5.386c-.172 1.279-.5 2.05-1.069 2.62c-.57.569-1.34.896-2.619 1.068c-1.3.174-3.008.176-5.386.176s-4.086-.002-5.386-.176c-.882-.119-1.522-.311-2.021-.606l4.657-4.657v1.939a.75.75 0 0 0 1.5 0V14a.75.75 0 0 0-.75-.75H6.25a.75.75 0 0 0 0 1.5h1.94l-4.658 4.657c-.295-.499-.487-1.139-.606-2.02c-.174-1.3-.176-3.009-.176-5.387s.002-4.086.176-5.386c.172-1.279.5-2.05 1.069-2.62"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                      <p class="font-inter text-cardIconColor">Detail</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="propertyCard animasiOpacity">
-                <div class="h-60 w-full md:h-48">
-                  <img
-                    src="assets/image/latest/latest (1).jpeg"
-                    alt=""
-                    class="h-full w-full rounded-3xl object-cover"
-                  />
-                </div>
-                <div class="flex flex-col gap-2">
-                  <h1 class="font-inter text-xl">Modern villa</h1>
-                  <div class="flex flex-row justify-between px-4">
-                    <div class="flex flex-row text-cardIconColor">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M12.004 11.73q.667 0 1.14-.475t.472-1.143t-.476-1.14t-1.143-.472t-1.14.476t-.472 1.143t.475 1.14t1.144.472M12 19.677q2.82-2.454 4.458-4.991t1.638-4.39q0-2.744-1.737-4.53Q14.62 3.981 12 3.981T7.641 5.766t-1.737 4.53q0 1.852 1.638 4.39T12 19.677m0 1.342q-3.525-3.117-5.31-5.814q-1.786-2.697-1.786-4.909q0-3.173 2.066-5.234Q9.037 3 12 3t5.03 2.062q2.066 2.061 2.066 5.234q0 2.212-1.785 4.909q-1.786 2.697-5.311 5.814m0-10.903"
-                        />
-                      </svg>
-                      <p>London</p>
-                    </div>
-
-                    <h1
-                      class="font-poppins text-xl font-semibold text-priceColor"
-                    >
-                      $ 335
-                    </h1>
-                  </div>
-                  <div class="px-4">
-                    <hr class="w-full border border-gray-300" />
-                  </div>
-                  <div class="flex flex-row justify-between px-4">
-                    <div class="bed flex flex-row gap-2">
-                      <svg
-                        class="text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M3 17.5V13q0-.444.256-.946T4 11.3V9q0-.846.577-1.423T6 7h4.5q.517 0 .883.213q.365.212.617.587q.252-.375.617-.587Q12.983 7 13.5 7H18q.846 0 1.423.577T20 9v2.3q.489.252.744.754q.256.502.256.946v4.5q0 .213-.144.356t-.357.144t-.356-.144T20 17.5V16H4v1.5q0 .213-.144.356T3.499 18t-.356-.144T3 17.5m9.5-6.5H19V9q0-.425-.288-.712T18 8h-4.5q-.425 0-.712.288T12.5 9zM5 11h6.5V9q0-.425-.288-.712T10.5 8H6q-.425 0-.712.288T5 9zm-1 4h16v-2q0-.425-.288-.712T19 12H5q-.425 0-.712.288T4 13zm16 0H4z"
-                        />
-                      </svg>
-                      <p class="font-inter text-cardIconColor">2</p>
-                    </div>
-                    <div class="bathroom flex flex-row gap-2">
-                      <svg
-                        class="text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 512 512"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M464 280H80V100a51.26 51.26 0 0 1 15.113-36.485l.4-.4a51.69 51.69 0 0 1 58.6-10.162a79.1 79.1 0 0 0 11.778 96.627l10.951 10.951l-20.157 20.158l22.626 22.626l20.157-20.157L311.157 71.471l20.157-20.157l-22.627-22.627l-20.158 20.157l-10.951-10.951a79.086 79.086 0 0 0-100.929-8.976A83.61 83.61 0 0 0 72.887 40.485l-.4.4A83.05 83.05 0 0 0 48 100v180H16v32h32v30.7a24 24 0 0 0 1.232 7.589L79 439.589A23.97 23.97 0 0 0 101.766 456h12.9L103 496h33.333L148 456h208.1l12 40h33.4l-12-40h20.73A23.97 23.97 0 0 0 433 439.589l29.766-89.3A24 24 0 0 0 464 342.7V312h32v-32ZM188.52 60.52a47.025 47.025 0 0 1 66.431 0L265.9 71.471L199.471 137.9l-10.951-10.949a47.027 47.027 0 0 1 0-66.431M432 341.4L404.468 424H107.532L80 341.4V312h352Z"
-                        />
-                      </svg>
-                      <p class="font-inter text-cardIconColor">2</p>
-                    </div>
-                    <div class="detail flex flex-row gap-2">
-                      <svg
-                        class="text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          fill-rule="evenodd"
-                          d="M11.943 1.25c-2.309 0-4.118 0-5.53.19c-1.444.194-2.584.6-3.479 1.494c-.895.895-1.3 2.035-1.494 3.48c-.19 1.411-.19 3.22-.19 5.529v.114c0 2.309 0 4.118.19 5.53c.194 1.444.6 2.584 1.494 3.479c.895.895 2.035 1.3 3.48 1.494c1.411.19 3.22.19 5.529.19h.114c2.309 0 4.118 0 5.53-.19c1.444-.194 2.584-.6 3.479-1.494c.895-.895 1.3-2.035 1.494-3.48c.19-1.411.19-3.22.19-5.529v-.114c0-2.309 0-4.118-.19-5.53c-.194-1.444-.6-2.584-1.494-3.479c-.895-.895-2.035-1.3-3.48-1.494c-1.411-.19-3.22-.19-5.529-.19zM3.995 3.995c.57-.57 1.34-.897 2.619-1.069c1.3-.174 3.008-.176 5.386-.176s4.086.002 5.386.176c.882.119 1.522.311 2.021.606L14.75 8.189V6.25a.75.75 0 0 0-1.5 0V10c0 .414.336.75.75.75h3.75a.75.75 0 0 0 0-1.5h-1.94l4.658-4.657c.295.499.487 1.139.606 2.02c.174 1.3.176 3.009.176 5.387s-.002 4.086-.176 5.386c-.172 1.279-.5 2.05-1.069 2.62c-.57.569-1.34.896-2.619 1.068c-1.3.174-3.008.176-5.386.176s-4.086-.002-5.386-.176c-.882-.119-1.522-.311-2.021-.606l4.657-4.657v1.939a.75.75 0 0 0 1.5 0V14a.75.75 0 0 0-.75-.75H6.25a.75.75 0 0 0 0 1.5h1.94l-4.658 4.657c-.295-.499-.487-1.139-.606-2.02c-.174-1.3-.176-3.009-.176-5.387s.002-4.086.176-5.386c.172-1.279.5-2.05 1.069-2.62"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                      <p class="font-inter text-cardIconColor">Detail</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="propertyCard animasiOpacity">
-                <div class="h-60 w-full md:h-48">
-                  <img
-                    src="assets/image/latest/latest (1).jpeg"
-                    alt=""
-                    class="h-full w-full rounded-3xl object-cover"
-                  />
-                </div>
-                <div class="flex flex-col gap-2">
-                  <h1 class="font-inter text-xl">Modern villa</h1>
-                  <div class="flex flex-row justify-between px-4">
-                    <div class="flex flex-row text-cardIconColor">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M12.004 11.73q.667 0 1.14-.475t.472-1.143t-.476-1.14t-1.143-.472t-1.14.476t-.472 1.143t.475 1.14t1.144.472M12 19.677q2.82-2.454 4.458-4.991t1.638-4.39q0-2.744-1.737-4.53Q14.62 3.981 12 3.981T7.641 5.766t-1.737 4.53q0 1.852 1.638 4.39T12 19.677m0 1.342q-3.525-3.117-5.31-5.814q-1.786-2.697-1.786-4.909q0-3.173 2.066-5.234Q9.037 3 12 3t5.03 2.062q2.066 2.061 2.066 5.234q0 2.212-1.785 4.909q-1.786 2.697-5.311 5.814m0-10.903"
-                        />
-                      </svg>
-                      <p>London</p>
-                    </div>
-
-                    <h1
-                      class="font-poppins text-xl font-semibold text-priceColor"
-                    >
-                      $ 335
-                    </h1>
-                  </div>
-                  <div class="px-4">
-                    <hr class="w-full border border-gray-300" />
-                  </div>
-                  <div class="flex flex-row justify-between px-4">
-                    <div class="bed flex flex-row gap-2">
-                      <svg
-                        class="text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M3 17.5V13q0-.444.256-.946T4 11.3V9q0-.846.577-1.423T6 7h4.5q.517 0 .883.213q.365.212.617.587q.252-.375.617-.587Q12.983 7 13.5 7H18q.846 0 1.423.577T20 9v2.3q.489.252.744.754q.256.502.256.946v4.5q0 .213-.144.356t-.357.144t-.356-.144T20 17.5V16H4v1.5q0 .213-.144.356T3.499 18t-.356-.144T3 17.5m9.5-6.5H19V9q0-.425-.288-.712T18 8h-4.5q-.425 0-.712.288T12.5 9zM5 11h6.5V9q0-.425-.288-.712T10.5 8H6q-.425 0-.712.288T5 9zm-1 4h16v-2q0-.425-.288-.712T19 12H5q-.425 0-.712.288T4 13zm16 0H4z"
-                        />
-                      </svg>
-                      <p class="font-inter text-cardIconColor">2</p>
-                    </div>
-                    <div class="bathroom flex flex-row gap-2">
-                      <svg
-                        class="text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 512 512"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M464 280H80V100a51.26 51.26 0 0 1 15.113-36.485l.4-.4a51.69 51.69 0 0 1 58.6-10.162a79.1 79.1 0 0 0 11.778 96.627l10.951 10.951l-20.157 20.158l22.626 22.626l20.157-20.157L311.157 71.471l20.157-20.157l-22.627-22.627l-20.158 20.157l-10.951-10.951a79.086 79.086 0 0 0-100.929-8.976A83.61 83.61 0 0 0 72.887 40.485l-.4.4A83.05 83.05 0 0 0 48 100v180H16v32h32v30.7a24 24 0 0 0 1.232 7.589L79 439.589A23.97 23.97 0 0 0 101.766 456h12.9L103 496h33.333L148 456h208.1l12 40h33.4l-12-40h20.73A23.97 23.97 0 0 0 433 439.589l29.766-89.3A24 24 0 0 0 464 342.7V312h32v-32ZM188.52 60.52a47.025 47.025 0 0 1 66.431 0L265.9 71.471L199.471 137.9l-10.951-10.949a47.027 47.027 0 0 1 0-66.431M432 341.4L404.468 424H107.532L80 341.4V312h352Z"
-                        />
-                      </svg>
-                      <p class="font-inter text-cardIconColor">2</p>
-                    </div>
-                    <div class="detail flex flex-row gap-2">
-                      <svg
-                        class="text-black"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          fill-rule="evenodd"
-                          d="M11.943 1.25c-2.309 0-4.118 0-5.53.19c-1.444.194-2.584.6-3.479 1.494c-.895.895-1.3 2.035-1.494 3.48c-.19 1.411-.19 3.22-.19 5.529v.114c0 2.309 0 4.118.19 5.53c.194 1.444.6 2.584 1.494 3.479c.895.895 2.035 1.3 3.48 1.494c1.411.19 3.22.19 5.529.19h.114c2.309 0 4.118 0 5.53-.19c1.444-.194 2.584-.6 3.479-1.494c.895-.895 1.3-2.035 1.494-3.48c.19-1.411.19-3.22.19-5.529v-.114c0-2.309 0-4.118-.19-5.53c-.194-1.444-.6-2.584-1.494-3.479c-.895-.895-2.035-1.3-3.48-1.494c-1.411-.19-3.22-.19-5.529-.19zM3.995 3.995c.57-.57 1.34-.897 2.619-1.069c1.3-.174 3.008-.176 5.386-.176s4.086.002 5.386.176c.882.119 1.522.311 2.021.606L14.75 8.189V6.25a.75.75 0 0 0-1.5 0V10c0 .414.336.75.75.75h3.75a.75.75 0 0 0 0-1.5h-1.94l4.658-4.657c.295.499.487 1.139.606 2.02c.174 1.3.176 3.009.176 5.387s-.002 4.086-.176 5.386c-.172 1.279-.5 2.05-1.069 2.62c-.57.569-1.34.896-2.619 1.068c-1.3.174-3.008.176-5.386.176s-4.086-.002-5.386-.176c-.882-.119-1.522-.311-2.021-.606l4.657-4.657v1.939a.75.75 0 0 0 1.5 0V14a.75.75 0 0 0-.75-.75H6.25a.75.75 0 0 0 0 1.5h1.94l-4.658 4.657c-.295-.499-.487-1.139-.606-2.02c-.174-1.3-.176-3.009-.176-5.387s.002-4.086.176-5.386c.172-1.279.5-2.05 1.069-2.62"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                      <p class="font-inter text-cardIconColor">Detail</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <button
-              class="button m-auto flex w-fit flex-row items-center justify-center rounded-2xl bg-biru"
-            >
-              See More
+            <div class="aboutBox">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -1338,470 +407,22 @@
                 viewBox="0 0 24 24"
               >
                 <path
-                  fill="currentColor"
-                  d="M18 7.05a1 1 0 0 0-1-1L9 6a1 1 0 0 0 0 2h5.56l-8.27 8.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L16 9.42V15a1 1 0 0 0 1 1a1 1 0 0 0 1-1Z"
+                  fill="#6F4E37"
+                  d="M21 11c0 5.55-3.84 10.74-9 12c-5.16-1.26-9-6.45-9-12V5l9-4l9 4zm-9 10c3.75-1 7-5.46 7-9.78V6.3l-7-3.12L5 6.3v4.92C5 15.54 8.25 20 12 21m-2-4l-4-4l1.41-1.41L10 14.17l6.59-6.59L18 9"
                 />
               </svg>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <!-- Review -->
-      <section
-        id="review"
-        class="flex flex-col items-center justify-center gap-5 px-5 py-24 md:px-16"
-      >
-        <h1 class="judulSection animasiKeAtas w-full text-left">Reviews</h1>
-        <div class="swiper swiperReview w-full">
-          <div class="swiper-wrapper py-12">
-            <div
-              class="swiper-slide animasiKeKiriCard3 relative max-h-[470px] max-w-[370px] rounded-3xl"
-            >
-              <div class="relative h-full w-full rounded-3xl shadow-md">
-                <img
-                  src="assets/image/reviews/review.jpeg"
-                  alt=""
-                  class="relative inset-0 h-full w-full rounded-3xl object-cover"
-                />
-                <div
-                  class="absolute bottom-0 z-10 flex h-60 flex-col gap-4 rounded-3xl bg-white p-4"
-                >
-                  <div class="flex flex-row items-center justify-between">
-                    <img src="assets/image/icon/dummy profile.png" alt="" />
-                    <p class="font-poppins text-textColorThird">1 week ago</p>
-                  </div>
-                  <div class="flex h-full flex-col justify-between gap-4">
-                    <p
-                      class="text-left font-poppins text-lg font-semibold text-textColorSec"
-                    >
-                      "The house is spacious, well maintained and equipped with
-                      modern technology!"
-                    </p>
-                    <div class="flex flex-row items-center justify-between">
-                      <p class="font-poppins text-textColorThird">
-                        Anastasya launi
-                      </p>
-                      <div class="rating flex flex-row text-yellow-400">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="swiper-slide animasiKeKiriCard3 relative max-h-[470px] max-w-[370px] rounded-3xl"
-            >
-              <div class="relative h-full w-full rounded-3xl shadow-md">
-                <img
-                  src="assets/image/reviews/review.jpeg"
-                  alt=""
-                  class="relative inset-0 h-full w-full rounded-3xl object-cover"
-                />
-                <div
-                  class="absolute bottom-0 z-10 flex h-60 flex-col gap-4 rounded-3xl bg-white p-4"
-                >
-                  <div class="flex flex-row items-center justify-between">
-                    <img src="assets/image/icon/dummy profile.png" alt="" />
-                    <p class="font-poppins text-textColorThird">1 week ago</p>
-                  </div>
-                  <div class="flex h-full flex-col justify-between gap-4">
-                    <p
-                      class="text-left font-poppins text-lg font-semibold text-textColorSec"
-                    >
-                      “From viewing the house to signing the lease, everything
-                      went smoothly.”
-                    </p>
-                    <div class="flex flex-row items-center justify-between">
-                      <p class="font-poppins text-textColorThird">
-                        Hardin scoot
-                      </p>
-                      <div class="rating flex flex-row text-yellow-400">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="swiper-slide animasiKeKiriCard3 relative max-h-[470px] max-w-[370px] rounded-3xl"
-            >
-              <div class="relative h-full w-full rounded-3xl shadow-md">
-                <img
-                  src="assets/image/reviews/review.jpeg"
-                  alt=""
-                  class="relative inset-0 h-full w-full rounded-3xl object-cover"
-                />
-                <div
-                  class="absolute bottom-0 z-10 flex h-60 flex-col gap-4 rounded-3xl bg-white p-4"
-                >
-                  <div class="flex flex-row items-center justify-between">
-                    <img src="assets/image/icon/dummy profile.png" alt="" />
-                    <p class="font-poppins text-textColorThird">1 week ago</p>
-                  </div>
-                  <div class="flex h-full flex-col justify-between gap-4">
-                    <p
-                      class="text-left font-poppins text-lg font-semibold text-textColorSec"
-                    >
-                      “A perfect place to unwind after a busy day.”
-                    </p>
-                    <div class="flex flex-row items-center justify-between">
-                      <p class="font-poppins text-textColorThird">Theo James</p>
-                      <div class="rating flex flex-row text-yellow-400">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="swiper-slide animasiKeKiriCard3 relative max-h-[470px] max-w-[370px] rounded-3xl"
-            >
-              <div class="relative h-full w-full rounded-3xl shadow-md">
-                <img
-                  src="assets/image/reviews/review.jpeg"
-                  alt=""
-                  class="relative inset-0 h-full w-full rounded-3xl object-cover"
-                />
-                <div
-                  class="absolute bottom-0 z-10 flex h-60 flex-col gap-4 rounded-3xl bg-white p-4"
-                >
-                  <div class="flex flex-row items-center justify-between">
-                    <img src="assets/image/icon/dummy profile.png" alt="" />
-                    <p class="font-poppins text-textColorThird">1 week ago</p>
-                  </div>
-                  <div class="flex h-full flex-col justify-between gap-4">
-                    <p
-                      class="text-left font-poppins text-lg font-semibold text-textColorSec"
-                    >
-                      “The landlord was helpful, and the property was
-                      well-maintained.”
-                    </p>
-                    <div class="flex flex-row items-center justify-between">
-                      <p class="font-poppins text-textColorThird">Aluna</p>
-                      <div class="rating flex flex-row text-yellow-400">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="swiper-slide animasiKeKiriCard3 relative max-h-[470px] max-w-[370px] rounded-3xl"
-            >
-              <div class="relative h-full w-full rounded-3xl shadow-md">
-                <img
-                  src="assets/image/reviews/review.jpeg"
-                  alt=""
-                  class="relative inset-0 h-full w-full rounded-3xl object-cover"
-                />
-                <div
-                  class="absolute bottom-0 z-10 flex h-60 flex-col gap-4 rounded-3xl bg-white p-4"
-                >
-                  <div class="flex flex-row items-center justify-between">
-                    <img src="assets/image/icon/dummy profile.png" alt="" />
-                    <p class="font-poppins text-textColorThird">1 week ago</p>
-                  </div>
-                  <div class="flex h-full flex-col justify-between gap-4">
-                    <p
-                      class="text-left font-poppins text-lg font-semibold text-textColorSec"
-                    >
-                      "The house is spacious, well maintained and equipped with
-                      modern technology!"
-                    </p>
-                    <div class="flex flex-row items-center justify-between">
-                      <p class="font-poppins text-textColorThird">
-                        Anastasya launi
-                      </p>
-                      <div class="rating flex flex-row text-yellow-400">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <h3 class="boxHeaderAbout">Guaranteed Safe Travel</h3>
+              <p class="paragraphBoxAbout">
+                We ensure your safety and comfort, so your trip is well
+                protected.
+              </p>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
       </section>
     </main>
     <footer
-      class="footer grid w-full grid-cols-1 gap-16 bg-biru lg:grid-cols-[30%_1fr]"
+      class="footer bg-biru grid w-full grid-cols-1 gap-16 lg:grid-cols-[30%_1fr]"
     >
       <div
         class="flex w-full flex-col items-start justify-start gap-3 lg:w-full lg:gap-6"
@@ -1820,7 +441,7 @@
               name=""
               id=""
               placeholder="Email adress"
-              class="w-full bg-biru text-white placeholder-white outline-none"
+              class="bg-biru w-full text-white placeholder-white outline-none"
             />
             <svg
               xmlns="http://www.w3.org/2000/svg"

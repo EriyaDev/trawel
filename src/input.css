@@ -29,7 +29,7 @@
 }
 
 .judulSection {
-  @apply font-poppins text-4xl font-semibold text-biru lg:text-5xl;
+  @apply font-poppins text-4xl font-semibold lg:text-5xl;
 }
 
 .paragraf {
@@ -66,4 +66,20 @@
 
 .gambarHero {
   @apply h-1/2 w-full object-cover;
+}
+
+.aboutBox {
+  @apply flex flex-col justify-evenly rounded-lg bg-softColorBG p-4 font-poppins;
+}
+
+.boxContainerAbout {
+  @apply grid h-full w-full grid-cols-1 gap-3 md:grid-cols-1 md:gap-5 lg:grid-cols-1;
+}
+
+.boxHeaderAbout {
+  @apply text-xl font-semibold text-softColorText lg:text-2xl;
+}
+
+.paragraphBoxAbout {
+  @apply lg:textlg font-light text-paragraph;
 }

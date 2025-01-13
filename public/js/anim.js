@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const animasiKeKanan = document.querySelectorAll(".animasiKeKanan");
     const animasiKeKiri = document.querySelectorAll(".animasiKeKiri");
     const animasiKeAtas = document.querySelectorAll(".animasiKeAtas");
+    const animasiKeBawah = document.querySelectorAll(".animasiKeBawah");
+    const animasiOpacity = document.querySelectorAll(".animasiOpacity");
     // gsap code here!
     animasiKeKanan.forEach((obj) => {
       gsap.from(obj, {
@@ -50,6 +52,35 @@ document.addEventListener("DOMContentLoaded", (event) => {
       });
     });
 
+    animasiKeBawah.forEach((obj) => {
+      gsap.from(obj, {
+        scrollTrigger: {
+          trigger: obj,
+          start: "top center", // Animation starts when top of element hits 80% of viewport
+          end: "bottom bottom",
+          toggleActions: "restart none none reverse",
+        },
+        y: -50,
+        opacity: 0,
+        ease: "power2.out",
+        duration: 1,
+      });
+    });
+
+    animasiOpacity.forEach((obj) => {
+      gsap.from(obj, {
+        scrollTrigger: {
+          trigger: obj,
+          start: "top center", // Animation starts when top of element hits 80% of viewport
+          end: "bottom bottom",
+          toggleActions: "restart none none reverse",
+        },
+        opacity: 0,
+        ease: "power2.out",
+        duration: 1,
+      });
+    });
+
     gsap.from(".animasiKeKiriCard", {
       scrollTrigger: {
         trigger: ".animasiKeKiriCard",
@@ -89,16 +120,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
       duration: 1,
       stagger: 0.2,
     });
-    gsap.from(".animasiOpacity", {
-      scrollTrigger: {
-        trigger: ".animasiOpacity",
-        start: "top center", // Animation starts when top of element hits 80% of viewport
-        end: "bottom bottom",
-        toggleActions: "restart none none reverse",
-      },
-      opacity: 0,
-      ease: "power2.out",
-      duration: 1,
-      stagger: 0.1,
-    });
+    // gsap.from(".animasiOpacity", {
+    //   scrollTrigger: {
+    //     trigger: ".animasiOpacity",
+    //     start: "top center", // Animation starts when top of element hits 80% of viewport
+    //     end: "bottom bottom",
+    //     toggleActions: "restart none none reverse",
+    //   },
+    //   opacity: 0,
+    //   ease: "power2.out",
+    //   duration: 1,
+    //   stagger: 0.1,
+    // });
   });

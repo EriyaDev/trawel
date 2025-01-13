@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* Inter */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* Clash Display */
+@import url("https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700,1&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -21,7 +23,11 @@
 }
 
 .buttonRegister {
-  @apply items-center justify-center px-4 py-2 font-poppins font-medium text-black;
+  @apply items-center justify-center px-4 py-2 font-poppins font-medium text-white;
+}
+
+.buttonRegisterMobile {
+  @apply items-center justify-center px-4 py-2 font-poppins font-medium text-heroHeader;
 }
 
 .gambarKecilAbout {
@@ -65,7 +71,7 @@
 }
 
 .gambarHero {
-  @apply h-1/2 w-full object-cover;
+  @apply h-full w-full object-cover;
 }
 
 .aboutBox {
@@ -81,5 +87,42 @@
 }
 
 .paragraphBoxAbout {
-  @apply lg:textlg font-light text-paragraph;
+  @apply font-light text-paragraph lg:text-lg;
+}
+
+.swiper-button-next {
+  background-color: #deac80;
+  color: white !important;
+  width: 40px !important;
+  height: 40px !important;
+  padding: 1rem !important;
+  display: flex;
+  justify-content: center;
+  align-item: center;
+  --swiper-navigation-size: 20px;
+}
+.swiper-button-prev {
+  background-color: none !important;
+  color: #deac80 !important;
+  border: 1px solid #deac80 !important;
+  width: 40px !important;
+  height: 40px !important;
+  padding: 1rem !important;
+  display: flex;
+  justify-content: center;
+  align-item: center;
+  --swiper-navigation-size: 20px;
+  --swiper-navigation-color: #deac80;
+}
+
+.galleryColumn {
+  columns: 100px 3;
+}
+
+.galleryImage {
+  @apply py-2;
+}
+
+.packageCard {
+  @apply h-full w-[500px] rounded-2xl shadow-lg;
 }

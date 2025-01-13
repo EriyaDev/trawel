@@ -5,12 +5,13 @@ module.exports = {
     fontFamily: {
       'poppins' : "Poppins",
       'inter' : "Inter",
+      'clashDisplay' : "Clash Display",
     }
     ,
     extend: {
       colors: {
-        'heroHeader': "#3C3C3C",
-        'heroHeaderSec' : "#2E653C",
+        'heroHeader': "#6F4E37",
+        'heroHeaderSec' : "#DEAC80",
         'heroSubtitle' : "#535353",
         'paragraph' : "#6c6c6c",
         'paragraphSec' : "#6F4E37",
@@ -22,11 +23,13 @@ module.exports = {
         'iconColor' : "#6F4E37",
         'textColorSec' : "#676767",
         'textColorThird' : "#777777",
-        'featuredTextBgColor' : "#555555c4",
+        'featuredTextBgColor' : "#00000080",
         'subtitleColor' : "#696969",
         'sectionBGColor' : "#FFF8E8",
         'softColorBG' : "#FFF8E873",
-        'softColorText' : "#6F4E37CC"
+        'softColorText' : "#6F4E37CC",
+        'textCardPackage' : "#424242",
+        'descCardPackage' : "#929292"
       },
       borderRadius: {
         'radiusGambarHero' : '4rem',
